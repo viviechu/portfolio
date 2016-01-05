@@ -1,0 +1,88 @@
+<navbar></navbar>
+<header id="banner">
+</header>
+<div id="parent">
+	 <div class="side"></div>
+	 <div class="center">
+		 <div class="box"></div>
+		 <div class="profile">
+				<div class="img">
+				    <img class="profile-logo" src="../../assets/images/logo.jpg">
+				</div>
+		 	<a class="btn btn-danger download" href="../../assets/resume.pdf" target="_self">Download Resume</a>
+		 	<div class="skills">
+		 	<div class="top-banner"><img class="icon" src="../../assets/images/skills.png"><h5 class="resume-title">SKILLS</h5></div>
+				<div class="progress" ng-repeat="skill in skills">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					<span>{{skill}}</span>
+				</div>
+				</div>
+		 	</div>
+		 </div>
+		 <div class="contact">
+			<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <td><span id="my-icon" class="glyphicon glyphicon-globe"></span></td>
+			      <td>WEBSITE<p>viviewen.space</p></td>
+			      <td><span class="glyphicon glyphicon-envelope"></span></td>
+			      <td>EMAIL ADDRESS<a href="mailto:hw2428@columbia.edu" target="_top"><p>hw2428@columbia.edu</p></a></td>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td><span class="glyphicon glyphicon-phone-alt"></span></td>
+			      <td>Phone<p>(415)308-8781</p></td>
+			      <td><img class="icon" src="../../assets/images/linkedin.svg"></td>
+			      <td>Linkedin<a href="https://www.linkedin.com/in/hsin-wei-vivie-wen-075ab391" target="_blank"><p>hsin-wei-vivie-wen-075ab391</p></a></td>
+			    </tr>
+			    <tr>
+			      <td><img class="icon" src="../../assets/images/github.svg"></td>
+			      <td>GitHub<a href="https://github.com/viviechu" target="_blank"><p>github.com/viviechu</p></a></td>
+			      <td><span class="glyphicon glyphicon-home"></span></td>
+			      <td>New York<p>NY</p></td>
+			    </tr>
+			  </tbody>
+			</table>
+	     </div>
+	     <div class="experience">
+	     	<div class="top-banner"><img class="icon" src="../../assets/images/experience.png"><h5 class="resume-title">PROJECTS</h5></div>
+	     	<div class="project first">
+	     		<a href="http://www.ghostrunner.xyz/" target="_blank"><img class="img-thumbnail img-responsive ghost" ng-mouseenter="ghost = ghost2" ng-mouseleave="ghost = ghost1" src="{{ghost}}"></a>
+	     		<p>Ionic, Node.js, AngularJS, Google Map API</p>
+	     	</div>
+	     	<div class="project second">
+	     		<a href="http://secure-beach-8890.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" ng-mouseenter="home = home2" ng-mouseleave="home = home1" src="{{home}}"></a>
+	     		<p>PhantomJS, Node.js,AngularJS, MongoDB</p>
+
+	     	</div>
+	     	<div class="project third">
+	     		<a href="http://glacial-chamber-2671.herokuapp.com/" target="_blank"><img class="img-thumbnail img-responsive" ng-mouseenter="store = store2" ng-mouseleave="store = store1" src="{{store}}"></a>
+	     		<p>Node.js, Express, AngularJS, Mongoose</p>
+
+	     	</div>
+	     </div>
+	     <div class="education">
+	     	<div class="top-banner"><img class="icon" src="../../assets/images/education.png"><h5 class="resume-title">EDUCATION</h5></div>
+	     	<div>
+	     	 <table class="table table-hover">
+               <tr>
+			      <td class="school">Fullstack Academy of Code</td>
+			      <td>Software Engineering</td>
+			    </tr>
+			    <tr>
+			      <td class="school">Columbia University</td>
+			      <td>M.S Chemical Engineering</td>
+			    </tr>
+			    <tr>
+			      <td class="school">University of California, Los Angeles</td>
+			      <td>B.S Biochemistry</td>
+			    </tr>
+             </table>
+             </div>
+	     </div>
+
+	 </div>
+	 <div class="side"></div>
+
+</div>

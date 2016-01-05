@@ -1,31 +1,47 @@
 'use strict';
 
-(function() {
-
-class MainController {
-
-  constructor($http) {
-    this.$http = $http;
-    this.awesomeThings = [];
-
-    $http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-    });
-  }
-
-  addThing() {
-    if (this.newThing) {
-      this.$http.post('/api/things', { name: this.newThing });
-      this.newThing = '';
-    }
-  }
-
-  deleteThing(thing) {
-    this.$http.delete('/api/things/' + thing._id);
-  }
-}
-
 angular.module('profileApp')
-  .controller('MainController', MainController);
+  .controller('MainController', function ($scope, dragDrop) {
 
-})();
+     // on drop success function takes data, event col number
+     //  - push to dropped object in target column
+     //
+     // on drag success delete from drag column
+     $scope.draggableObjects1 = dragDrop.fetchDragCol('one')
+     $scope.draggableObjects2 = dragDrop.fetchDragCol('two')
+     $scope.draggableObjects3 = dragDrop.fetchDragCol('three')
+      $scope.draggableObjects4 = dragDrop.fetchDragCol('four')
+
+     $scope.droppedObjects1 = dragDrop.fetchDropCol('one')
+     $scope.droppedObjects2 = dragDrop.fetchDropCol('two')
+     $scope.droppedObjects3 = dragDrop.fetchDropCol('three')
+     $scope.droppedObjects4 = dragDrop.fetchDropCol('four')
+
+     $scope.onDropComplete=function(data,evt,col){
+
+           dragDrop.drop(data,col);
+            $scope.droppedObjects1 =  dragDrop.fetchDropCol('one')
+            $scope.droppedObjects2 =  dragDrop.fetchDropCol('two')
+            $scope.droppedObjects3 = dragDrop.fetchDropCol('three')
+            $scope.droppedObjects4 = dragDrop.fetchDropCol('four')
+
+        }
+
+    $scope.onDragSuccess=function(data, evt, col){
+
+         dragDrop.drag(data, col);
+      $scope.draggableObjects1 = dragDrop.fetchDragCol('one');
+      $scope.draggableObjects2 = dragDrop.fetchDragCol('two');
+      $scope.draggableObjects3 = dragDrop.fetchDragCol('three');
+      $scope.draggableObjects4 = dragDrop.fetchDragCol('four');
+      $scope.droppedObjects1 =  dragDrop.fetchDropCol('one');
+      $scope.droppedObjects2 =  dragDrop.fetchDropCol('two');
+      $scope.droppedObjects3 =  dragDrop.fetchDropCol('three');
+       $scope.droppedObjects4 =  dragDrop.fetchDropCol('four');
+    }
+
+
+
+
+  });
+

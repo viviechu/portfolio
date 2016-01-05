@@ -9,7 +9,9 @@ angular.module('profileApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'validation.match'
+  'validation.match',
+  'ngDraggable'
+
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider

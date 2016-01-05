@@ -1,0 +1,133 @@
+*{
+   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+}
+.side{
+  width: 6%;
+  display: inline-block;
+  float: left;
+  height: 600px;
+  background: #34419A;
+}
+
+.center{
+	width: 88%;
+	display: inline-block;
+	float:left;
+	background-color: #F0F8FF;
+	height:600px;
+    border-radius: 10px;
+}
+
+.box {
+	width: 100%;
+	height: 5%;
+    clear: both;
+}
+
+.contact {
+	display:inline-block;
+	float:right;
+    width:50%;
+    height:30%;
+    font-size: 0.8em;
+    margin: 0 30px 0 10px;
+}
+
+.icon{
+	width: 23px;
+}
+
+.glyphicon {
+    font-size: 20px;
+}
+
+.experience {
+    display:inline-block;
+    text-align:left;
+	float:right;
+	width: 50%;
+	height:40%;
+	margin: -10px 30px 10px 10px;
+}
+
+.profile{
+	display:inline-block;
+	float:left;
+	width: 40%;
+	height: 95%;
+	margin: 0 10px 0 30px;
+}
+
+.education{
+	display:inline-block;
+	text-align:left;
+	float:right;
+	width: 50%;
+	height: 25%;
+	margin: 0 30px 0 10px;
+}
+
+.resume-title{
+	display:inline-block;
+	margin-left: 10px;
+}
+
+.top-banner{
+	border-bottom: 2px solid #A9A9A9
+}
+
+.school{
+   color:#87CEFA;
+   font-weight: 700;
+}
+
+.profile-logo{
+	width: 50%;
+	height: 12em;
+	margin: 0 0 2.5em 0;
+}
+
+.project{
+	width: 30%;
+	height: 80%;
+	float:left;
+}
+
+.project.first{
+	margin: 1.25% 1.25% 0 2.5%;
+}
+.project.second{
+	margin: 1.25% 1.25%;
+}
+.project.third{
+	margin: 1.25% 2.5% 0 1.25%;
+
+}
+.img-thumbnail{
+	height: 80%;
+	width: 100%;
+}
+
+.btn-danger.download{
+	border-radius: 15%;
+	box-shadow: 0 0 3px gray;
+}
+.skills{
+	width:100%;
+	height: 50%;
+	padding-top: 2em;
+	text-align:left;
+}
+.progress{
+	background-color:#808080;
+	margin: 1em;
+
+}

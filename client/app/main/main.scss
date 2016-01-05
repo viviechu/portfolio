@@ -18,19 +18,35 @@
 
 .column {
    width: 21%;
-   height: 480px;
+   height: 100%;
    float:left;
    margin: 2% 2% 0 2%;
+   text-align:center;
 }
 
 #parent {
   width:100%;
-  height: 500px;
+  height: 700px;
   margin: auto 0;
-  background:#6666FF;
-  text-align:center
+  background:#34419A;
+  text-align:center;
 }
 
 .border{
   border-right: 1px solid #FFFAFA;
 }
+
+.draggable {
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  background-color: #F0F8FF;
+  margin: 1.5em;
+  padding: 1px;
+  width: 80%;
+  height: 10%;
+}
+
+.logo{
+  width: 35%;
+}
+

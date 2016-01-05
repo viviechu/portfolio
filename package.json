@@ -1,7 +1,7 @@
 {
   "name": "profile",
   "version": "0.0.0",
-  "main": "server/app.js",
+  "main": "server/start.js",
   "dependencies": {
     "babel": "^6.3.26",
     "babel-register": "^6.3.13",

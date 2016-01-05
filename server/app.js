@@ -4,6 +4,8 @@
 
 'use strict';
 
+require('babel/register');
+
 import express from 'express';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');

@@ -1,7 +1,7 @@
 'use strict';
 
-var path = require('path');
-var _ = require('lodash');
+import path from 'path';
+import _ from 'lodash';
 
 function requiredProcessEnv(name) {
   if (!process.env[name]) {
@@ -62,7 +62,9 @@ var all = {
 
 // Export the config object based on the NODE_ENV
 // ==============================================
-module.exports = _.merge(
+var result = _.merge(
   all,
   require('./shared'),
-  require('./' + process.env.NODE_ENV + '.js') || {});
+  require('./' + (process.env.NODE_ENV || 'development') + '.js') || {});
+
+export { result as default };
